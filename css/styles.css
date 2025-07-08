@@ -1263,3 +1263,22 @@ body {
     max-width: 540px; /* Bootstrap's sm container width */
   }
 }
+
+/* Ensure hamburger menu has a background and right-aligned items on mobile */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #1a1a1a; /* Dark background for visibility */
+    padding: 15px;
+  }
+  .navbar-nav.custom-nav {
+    text-align: right;
+  }
+  .nav-link {
+    color: #ffffff !important; /* Ensure white text is explicit */
+    padding: 10px 15px; /* Improve touch area */
+  }
+  .social-icons {
+    justify-content: flex-end; /* Align social icons to the right */
+    margin-top: 10px;
+  }
+}
