@@ -1264,21 +1264,26 @@ body {
   }
 }
 
-/* Ensure hamburger menu has a background and right-aligned items on mobile */
+/* Ensure hamburger menu has a reduced-width background and right-aligned items on mobile */
 @media (max-width: 991.98px) {
   .navbar-collapse {
-    background-color: #1a1a1a; /* Dark background for visibility */
+    background-color: #1a1a1a; /* Dark background */
+    width: 250px; /* Reduced width (adjust as needed, e.g., 200px or 70%) */
+    position: absolute; /* Ensure it doesn't stretch full width */
+    top: 100%; /* Position below navbar */
+    right: 0; /* Align to right edge */
     padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow for depth */
   }
   .navbar-nav.custom-nav {
-    text-align: right;
+    text-align: right; /* Right-align menu items */
   }
   .nav-link {
-    color: #ffffff !important; /* Ensure white text is explicit */
+    color: #ffffff !important; /* Ensure white text */
     padding: 10px 15px; /* Improve touch area */
   }
   .social-icons {
-    justify-content: flex-end; /* Align social icons to the right */
+    justify-content: flex-end; /* Align social icons to right */
     margin-top: 10px;
   }
 }
