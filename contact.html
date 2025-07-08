@@ -46,55 +46,32 @@
     </nav>
 
     <main>
-        <!-- Contact Hero Section -->
-        <section class="contact-hero-section d-flex align-items-center text-center text-white" style="background-image: url('images/service-hero1.jpg');" data-aos="fade-up">
-            <div class="container">
-                <h1 class="display-3 fw-bold">Contact Us</h1>
-            </div>
-        </section>
+       <form name="contact" method="POST" data-netlify="true">
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <label for="firstName" class="form-label visually-hidden">First Name</label>
+      <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
+    </div>
+    <div class="col-md-6 mt-3 mt-md-0">
+      <label for="lastName" class="form-label visually-hidden">Last Name</label>
+      <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label visually-hidden">Email</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Email *" required>
+  </div>
+  <div class="mb-3">
+    <label for="subject" class="form-label visually-hidden">Subject</label>
+    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+  </div>
+  <div class="mb-4">
+    <label for="yourMessage" class="form-label visually-hidden">Your Message</label>
+    <textarea class="form-control" id="yourMessage" name="message" rows="6" placeholder="Your Message *" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary btn-lg">SUBMIT</button>
+</form>
 
-        <!-- Contact Section -->
-         <main>
-    <form name="contact" method="POST" data-netlify="true">
-      <input type="text" name="firstName" required>
-      <input type="text" name="lastName" required>
-      <input type="email" name="email" required>
-      <input type="text" name="subject" required>
-      <textarea name="message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </main>
-        <section class="contact-section py-5 bg-light-gray">
-            <div class="container">
-                <div class="row gx-5">
-                    <div class="col-lg-7 mb-5 mb-lg-0" data-aos="fade-up">
-                        <h2 class="contact-form-heading mb-4">Have Questions? Reach Out To Us</h2>
-                        <form action="#" method="POST" data-netlify="true" name="contact">
-                            <input type="hidden" name="form-name" value="contact">
-                            <div class="row mb-3">
-                                <div class="col-md-6">
-                                    <label for="firstName" class="form-label visually-hidden">First Name</label>
-                                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
-                                </div>
-                                <div class="col-md-6 mt-3 mt-md-0">
-                                    <label for="lastName" class="form-label visually-hidden">Last Name</label>
-                                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label visually-hidden">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Email *" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="subject" class="form-label visually-hidden">Subject</label>
-                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
-                            </div>
-                            <div class="mb-4">
-                                <label for="yourMessage" class="form-label visually-hidden">Your Message</label>
-                                <textarea class="form-control" id="yourMessage" name="message" rows="6" placeholder="Your Message *" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-lg">SUBMIT</button>
-                        </form>
                     </div>
                     <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
                         <div class="contact-info-card p-4 p-md-5 rounded">
